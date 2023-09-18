@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mesphoto": {
+    "responsivetemplate": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mesphoto",
+            "outputPath": "dist/responsivetemplate",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "mesphoto:build:production"
+              "browserTarget": "responsivetemplate:build:production"
             },
             "development": {
-              "browserTarget": "mesphoto:build:development"
+              "browserTarget": "responsivetemplate:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mesphoto:build"
+            "browserTarget": "responsivetemplate:build"
           }
         },
         "test": {
@@ -94,5 +94,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "6f4c7ed8-0d4f-4631-b7eb-a87f03af9037"
   }
 }
